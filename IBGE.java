@@ -4,8 +4,9 @@ public class IBGE {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Estamos fazendo uma pesquisa de mercado para saber o preço médio dos produtos, informe o " +
-                "preço do produto baseado nos mercados proximos: ");
+        System.out.println("Estamos realizando uma pesquisa de mercado para identificar o preço " +
+                "médio dos produtos. Poderia nos informar o preço do produto com base nos " +
+                "cinco mercados próximos: ");
 
         double mercado1 = scanner.nextDouble();
         double mercado2 = scanner.nextDouble();
@@ -15,6 +16,8 @@ public class IBGE {
 
         double precoMedio = (mercado1 + mercado2 + mercado3 + mercado4 + mercado5) / 5;
 
+
+        System.out.println("Os preços que estão acima da média são esses:");
         if (mercado1 > precoMedio){
             System.out.println(mercado1);
         }
